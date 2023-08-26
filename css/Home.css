@@ -79,7 +79,7 @@ h3 {
 
   .AboutContainer 
     {
-        width: 50%;
+        width: 70%;
         height: 90%;
         border-radius: 30px;
         background-color: #211439;
@@ -95,15 +95,9 @@ h3 {
     font-size: 16px;
 
 }
-.lang {
-    right:0px;
-    margin: 10px;
-    border: none;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    border-radius: 10px;
-    position:absolute;
+.IAboutmobile {
+    display: none;
+visibility: hidden;
 }
 #Skills {
     height: 350px;
@@ -130,9 +124,9 @@ h3 {
 .projectlist{
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
-    width: 19%;
-    height: 50%;
+    margin-bottom: 50px;
+    width: 30%;
+    height: 60%;
     text-align: center;
 }
 .listed {
@@ -175,15 +169,99 @@ footer {
     height: 70px;
     padding: 50px;
 }
+#myBtn {
+    opacity: 100%;
+}
+.ISkillmobile {
+    display: none;
+    visibility: hidden;
+}
 @media
 (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
   }
 }
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+
+  @media screen and (min-width: 300px) and (max-width: 1000px) {
+    .onnav {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: inline-block;
+        margin-top: 15px;
+        font-size: small;
+    }
+    .IAboutmobile {
+        display: block;
+        visibility: visible;
+        white-space: pre;
+        margin-top: -30px;
+        margin-left: -110px;
+        font-size: 14px;
+    }
+    .AboutContainer 
+    {
+        width: 90%;
+        height: 70%;
+        border-radius: 30px;
+        background-color: #211439;
+        margin: 0 auto;
+        overflow-y: scroll;
+    }
+    .IAbout {
+        display: none;
+        visibility: hidden;
+    }
+    .heada {
+        padding: 50px;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 150px;
+        width: 150px;
+    
+    }
+    #Creation {
+        margin-top: 250px;
+    }
+    .ISkillmobile {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        width: 70%;
+        height: 50%;
+        border-radius: 30px;
+        background-color: #211439;
+        overflow-y: scroll;
+        text-align: center;
+        display: block;
+        visibility: visible;
+        font-size: 13px;
+    }
+    .ISkill {
+        display: none;
+        visibility: hidden;
+    }
+    #Creation {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .projectlist {
+        margin-top: 10px;
+        width: 60%;
+        
+    }
+    .listed {
+        height: 100px;
+    }
+    #myBtn {
+        opacity: 60%;
+    }
+    .imgmedia {
+        height: 40px;
+        width: 40px;
+    }
   }
 
   
